@@ -1,45 +1,46 @@
 import { motion } from "motion/react";
 import { Palette, Image, Layout, Award, Eye, Heart, ArrowRight, CheckCircle } from "lucide-react";
+import { ShoppingCart, BarChart, Smartphone } from "lucide-react";
 
 export function SquarespacePage() {
   const features = [
-    {
-      icon: <Palette className="w-6 h-6" />,
-      title: "Elegant Design",
-      description: "Sophisticated aesthetics that reflect your brand's premium quality",
-    },
-    {
-      icon: <Image className="w-6 h-6" />,
-      title: "Portfolio Focused",
-      description: "Stunning galleries and layouts to showcase your work",
-    },
-    {
-      icon: <Layout className="w-6 h-6" />,
-      title: "Custom Templates",
-      description: "Tailored designs that stand out from the crowd",
-    },
-    {
-      icon: <Award className="w-6 h-6" />,
-      title: "Award-Worthy",
-      description: "Design quality that wins recognition and attracts clients",
-    },
-    {
-      icon: <Eye className="w-6 h-6" />,
-      title: "Visual Impact",
-      description: "First impressions that leave lasting impressions",
-    },
-    {
-      icon: <Heart className="w-6 h-6" />,
-      title: "Brand Story",
-      description: "Narrative-driven layouts that connect with your audience",
-    },
-  ];
+  {
+    icon: <Layout className="w-6 h-6" />,
+    title: "Service Business Websites",
+    description: "Perfect for agencies, consultants, coaches, and local businesses",
+  },
+  {
+    icon: <Image className="w-6 h-6" />,
+    title: "Portfolio & Personal Brands",
+    description: "Showcase your work with clean, modern, high-impact layouts",
+  },
+  {
+    icon: <ShoppingCart className="w-6 h-6" />,
+    title: "E-commerce Ready",
+    description: "Sell products, services, or digital offers directly on your site",
+  },
+  {
+    icon: <Palette className="w-6 h-6" />,
+    title: "Custom Design & Branding",
+    description: "Fully tailored design to match your brand identity",
+  },
+  {
+    icon: <BarChart className="w-6 h-6" />,
+    title: "Conversion-Focused Layouts",
+    description: "Designed to turn visitors into leads and paying clients",
+  },
+  {
+    icon: <Smartphone className="w-6 h-6" />,
+    title: "Mobile Optimized",
+    description: "Seamless experience across all devices",
+  },
+];
 
   const pricing = [
     {
-      name: "Portfolio Starter",
-      price: "$799",
-      description: "Perfect for creatives just starting out",
+      name: "Starter Website",
+      price: "$199",
+      description: "Perfect for new businesses, personal brands, or service providers",
       features: [
         "Up to 5 pages",
         "Portfolio gallery",
@@ -50,9 +51,9 @@ export function SquarespacePage() {
       ],
     },
     {
-      name: "Professional Portfolio",
-      price: "$1,599",
-      description: "Ideal for established creatives and agencies",
+      name: "Business Website",
+      price: "$399",
+      description: "Ideal for growing businesses that need a professional online presence",
       features: [
         "Up to 12 pages",
         "Advanced gallery layouts",
@@ -65,9 +66,9 @@ export function SquarespacePage() {
       popular: true,
     },
     {
-      name: "Premium Brand",
-      price: "$2,799",
-      description: "For premium brands needing exceptional design",
+      name: "Premium Website",
+      price: "$599",
+      description: "For brands that want a high-end, fully customized website",
       features: [
         "Unlimited pages",
         "Fully custom design",
@@ -80,23 +81,62 @@ export function SquarespacePage() {
     },
   ];
 
-  const showcases = [
-    {
-      title: "Photography Portfolio",
-      category: "Photographer",
-      image: "https://images.unsplash.com/photo-1487338875411-8880f74114a2?w=800&h=600&fit=crop",
-    },
-    {
-      title: "Design Studio",
-      category: "Creative Agency",
-      image: "https://images.unsplash.com/photo-1491252027976-a03f31b9df00?w=800&h=600&fit=crop",
-    },
-    {
-      title: "Architecture Firm",
-      category: "Architecture",
-      image: "https://images.unsplash.com/photo-1594892185343-0241e1d47d15?w=800&h=600&fit=crop",
-    },
-  ];
+ const showcases = [
+  {
+    title: "Brevis Consulting",
+    category: "Consulting Firm",
+    image: "https://media.istockphoto.com/id/1413761479/photo/mature-couple-meeting-financial-advisor-for-investment.jpg?s=612x612&w=0&k=20&c=kKraGQ3d_90VsQVIwAx6mi3gNsiytiLT9jlEbmEh1lE=",
+    url: "https://brevisconsulting.com",
+  },
+  {
+    title: "ALW Studios",
+    category: "Creative Studio",
+    image: "https://media.istockphoto.com/id/1304287268/photo/studio-of-successful-artist.jpg?s=612x612&w=0&k=20&c=o1xN605yJnQxs7bzR2GwHhuqbLn_ph2oWDtV5oAMO5w=",
+    url: "https://alwstudios.com",
+  },
+  {
+    title: "The Lynn House",
+    category: "Hospitality / Nonprofit",
+    image: "https://media.istockphoto.com/id/1727988638/photo/community-services-young-team-of-people-helping-the-local-community.jpg?s=612x612&w=0&k=20&c=o_fpxdFrLExWud5ZEFKn94iq48Tn3Zhn34nSXzFchX0=",
+    url: "https://www.thelynnhouse.org",
+  },
+  {
+    title: "Vernon Staffing",
+    category: "Recruitment Agency",
+    image: "https://media.istockphoto.com/id/1907187799/photo/business-people-waiting-for-job-interview.jpg?s=612x612&w=0&k=20&c=4_FHZ1PP702O3eUAASOUCqKduZeTaGJvlcj-RPdidJY=",
+    url: "https://www.vernonstaffing.com",
+  },
+  {
+    title: "Pestrol",
+    category: "Pest Control Agency",
+    image: "https://media.istockphoto.com/id/1257975523/video/an-asian-chinese-female-farmer-with-protective-suit-spraying-on-bitter-groud-plants-in-the.avif?s=640x640&k=20&c=4Ke-Kkb13OV4u7EVGxGb9sBON1Q9sXCbQIbiUKhunlE=",
+    url: "https://www.pestrol.com",
+  },
+  {
+    title: "Oregon Care Home Council",
+    category: "Adult Care Association",
+    image: "https://media.istockphoto.com/id/602320994/photo/tea-and-cake-in-the-care-home.jpg?s=612x612&w=0&k=20&c=F55-2g0hwqaqg-VmlZxO9j-Zv1Jd_kfgPWS5AjEX1OM=",
+    url: "https://www.oregoncarehomecouncil.com",
+  },
+  {
+    title: "Healthy Lens Media",
+    category: "A Media Company",
+    image: "https://media.istockphoto.com/id/626071554/photo/film-crew.jpg?s=612x612&w=0&k=20&c=oWjru7tkCF3cfShi7648iKlU2SI_0xw0a0PnQWyTuYQ=",
+    url: "https://www.healthylensmedia.com",
+  },
+  {
+    title: "Gold Maple Group",
+    category: "Business Consulting",
+    image: "https://media.istockphoto.com/id/1927881398/photo/group-of-business-persons-talking-in-the-office.jpg?s=612x612&w=0&k=20&c=N0erlm9rQIa_kdBpwxSOa8E1my9bwY_oeN84wZIhais=",
+    url: "https://www.goldmaplegroup.com",
+  },
+  {
+    title: "Good Office BSG GmbH",
+    category: "Corporate Business",
+    image: "https://media.istockphoto.com/id/2198078409/photo/woman-lawyer-and-tablet-at-meeting-with-team-planning-and-discussion-for-review-for-legal.jpg?s=612x612&w=0&k=20&c=RtxJFQvIa_udlrP3mX93GbAEcOmHwNbc905TX0zboIg=",
+    url: "https://www.goodofficebsgmbh.de",
+  },
+];
 
   return (
     <div className="pt-20">
@@ -112,12 +152,13 @@ export function SquarespacePage() {
               <div className="inline-block px-4 py-2 bg-amber-100 text-amber-700 rounded-full text-sm font-semibold mb-6">
                 ✨ Squarespace Design
               </div>
-              <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
-                Premium Websites for Creatives
-              </h1>
-              <p className="text-xl text-gray-600 mb-8 max-w-2xl">
-                We create elegant Squarespace websites for creatives and brands with portfolio-focused layouts that showcase your work beautifully.
-              </p>
+ <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
+  High-Converting Squarespace Websites for Any Business
+</h1>
+
+<p className="text-xl text-gray-600 mb-8 max-w-2xl">
+  We design professional Squarespace websites for service businesses, brands, portfolios, and online stores — built to attract clients, build trust, and drive results.
+</p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <motion.a
                   href="https://wa.me/447877406516"
@@ -125,7 +166,7 @@ export function SquarespacePage() {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  Start Your Portfolio
+                  Start Your Website
                   <ArrowRight className="w-5 h-5" />
                 </motion.a>
                 <motion.a
@@ -146,7 +187,7 @@ export function SquarespacePage() {
               transition={{ duration: 0.8, delay: 0.3 }}
             >
               <img
-                src="https://images.unsplash.com/photo-1523001185760-84ed1a5c6377?w=1200&h=900&fit=crop"
+                src="https://cdn.dribbble.com/userupload/47461556/file/fe5fcceb82f859b8714c1b7e72859110.png?resize=1504x1128&vertical=center"
                 alt="Squarespace website design"
                 className="rounded-3xl shadow-2xl"
               />
@@ -165,9 +206,9 @@ export function SquarespacePage() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-              Exceptional Design Features
-            </h2>
+<h2>
+  Everything You Need to Launch & Grow Online
+</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               Every detail crafted to perfection
             </p>
@@ -207,48 +248,51 @@ export function SquarespacePage() {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-              Portfolio Showcase
+              Websites We've Built
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Stunning websites for creative professionals
-            </p>
+From services businesses to brands and portfolios            </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            {showcases.map((showcase, index) => (
-              <motion.div
-                key={showcase.title}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="group"
-              >
-                <motion.div
-                  className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow"
-                  whileHover={{ y: -8 }}
-                >
-                  <div className="relative overflow-hidden aspect-[4/3]">
-                    <img
-                      src={showcase.image}
-                      alt={showcase.title}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
-                      <div className="absolute bottom-6 left-6 text-white">
-                        <div className="text-sm font-semibold mb-1">{showcase.category}</div>
-                        <div className="text-xs text-white/80">View Project</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold text-gray-900">
-                      {showcase.title}
-                    </h3>
-                  </div>
-                </motion.div>
-              </motion.div>
-            ))}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {showcases.map((showcase, index) => (
+  <a
+    key={showcase.title}
+    href={showcase.url}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="block group"
+  >
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6, delay: index * 0.1 }}
+      className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow"
+      whileHover={{ y: -8 }}
+    >
+      <div className="relative overflow-hidden aspect-[4/3]">
+        <img
+          src={showcase.image}
+          alt={showcase.title}
+          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+        />
+
+        <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center pointer-events-none">
+          <span className="text-white font-semibold text-sm tracking-wide">
+            Visit Website →
+          </span>
+        </div>
+      </div>
+
+      <div className="p-6">
+        <h3 className="text-xl font-bold text-gray-900">
+          {showcase.title}
+        </h3>
+      </div>
+    </motion.div>
+  </a>
+))}
           </div>
         </div>
       </section>
@@ -264,7 +308,7 @@ export function SquarespacePage() {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-              Investment Options
+              Our Pricing
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               Premium design at transparent pricing
@@ -337,11 +381,12 @@ export function SquarespacePage() {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-              Ready to Showcase Your Work?
-            </h2>
-            <p className="text-xl mb-8 text-amber-100 max-w-2xl mx-auto">
-              Create a stunning portfolio that attracts your ideal clients
-            </p>
+  Ready to Launch Your Squarespace Website?
+</h2>
+
+<p className="text-xl mb-8 text-amber-100 max-w-2xl mx-auto">
+  Whether you're a business, brand, or creative, we’ll build a website that gets you clients and results.
+</p>
             <motion.a
               href="https://wa.me/447877406516"
               className="inline-flex items-center gap-2 px-8 py-4 bg-white text-amber-600 rounded-full font-semibold text-lg hover:bg-gray-100 transition-colors"

@@ -38,7 +38,7 @@ export function WixPage() {
   const pricing = [
     {
       name: "Basic Business",
-      price: "$599",
+      price: "$199",
       description: "Perfect for solo entrepreneurs and freelancers",
       features: [
         "Up to 5 pages",
@@ -51,7 +51,7 @@ export function WixPage() {
     },
     {
       name: "Professional Business",
-      price: "$1,199",
+      price: "$399",
       description: "Ideal for small businesses and coaches",
       features: [
         "Up to 10 pages",
@@ -66,7 +66,7 @@ export function WixPage() {
     },
     {
       name: "Premium Business",
-      price: "$1,999",
+      price: "$799",
       description: "For established businesses needing advanced features",
       features: [
         "Unlimited pages",

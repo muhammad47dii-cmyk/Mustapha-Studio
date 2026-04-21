@@ -172,68 +172,62 @@ const portfolio = [
   return (
     <div className="pt-20">
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex items-center bg-gradient-to-br from-blue-50 via-white to-purple-50">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 py-20 grid lg:grid-cols-2 gap-16 items-center">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7 }}
-          >
-            <motion.h1
-              className="text-5xl lg:text-7xl font-bold text-gray-900 leading-tight mb-6"
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.1 }}
-            >
-              Websites That Convert Visitors Into Customers
-            </motion.h1>
-            <motion.p
-              className="text-xl text-gray-600 mb-8 max-w-2xl"
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.2 }}
-            >
-              Mustapha Studio builds high-performing websites and Shopify stores designed to increase sales and grow your business.
-            </motion.p>
-            <motion.div
-              className="flex flex-col sm:flex-row gap-4"
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.3 }}
-            >
-              <motion.a
-                href="#contact"
-                className="px-8 py-4 bg-blue-600 text-white rounded-full font-semibold text-lg inline-flex items-center justify-center gap-2 hover:bg-blue-700 transition-colors"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                Get a Free Quote
-                <ArrowRight className="w-5 h-5" />
-              </motion.a>
-             <motion.a
-  href={createWhatsAppLink("Hi, I'm interested in getting a website for my business. Can we discuss?")}
-  target="_blank"
-  className="px-8 py-4 bg-white text-gray-900 rounded-full font-semibold text-lg border-2 border-gray-200 inline-flex items-center justify-center gap-2 hover:border-gray-300 transition-colors"
->
-  Chat on WhatsApp
-</motion.a>
-            </motion.div>
-          </motion.div>
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+  {/* Background Image */}
+  <div className="absolute inset-0">
+    <img
+      src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=1600&h=900&fit=crop"
+      alt="Website design"
+      className="w-full h-full object-cover"
+    />
+    <div className="absolute inset-0 bg-black/60"></div>
+  </div>
 
-          <motion.div
-            className="relative"
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-          >
-            <img
-              src="https://images.unsplash.com/photo-1646193186175-4ec30e6e5882?w=1200&h=900&fit=crop"
-              alt="E-commerce website design"
-              className="rounded-3xl shadow-2xl"
-            />
-          </motion.div>
-        </div>
-      </section>
+  {/* Content */}
+  <div className="relative z-10 max-w-5xl mx-auto px-6 text-center text-white">
+    <motion.h1
+      className="text-5xl lg:text-7xl font-bold leading-tight mb-6"
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.7 }}
+    >
+      We Build Websites That Bring You Clients & Sales
+    </motion.h1>
+
+    <motion.p
+      className="text-xl text-gray-200 mb-10 max-w-2xl mx-auto"
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.7, delay: 0.2 }}
+    >
+      Shopify, Wix, Squarespace & Web Apps designed to convert visitors into paying customers.
+    </motion.p>
+
+    <motion.div
+      className="flex flex-col sm:flex-row gap-4 justify-center"
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.7, delay: 0.3 }}
+    >
+      <motion.a
+        href="#contact"
+        className="px-8 py-4 bg-blue-600 text-white rounded-full font-semibold text-lg inline-flex items-center justify-center gap-2 hover:bg-blue-700 transition"
+        whileHover={{ scale: 1.05 }}
+      >
+        Get a Free Quote
+        <ArrowRight className="w-5 h-5" />
+      </motion.a>
+
+      <motion.a
+        href={createWhatsAppLink("Hi, I want a website for my business.")}
+        target="_blank"
+        className="px-8 py-4 bg-white text-gray-900 rounded-full font-semibold text-lg border border-white inline-flex items-center justify-center hover:bg-gray-100 transition"
+      >
+        Chat on WhatsApp
+      </motion.a>
+    </motion.div>
+  </div>
+</section>
 
       {/* Services Section */}
       <section className="py-24 bg-white">

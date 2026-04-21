@@ -38,7 +38,7 @@ export function BubblePage() {
   const pricing = [
     {
       name: "MVP Starter",
-      price: "$799",
+      price: "$599",
       description: "Perfect for testing your startup idea",
       features: [
         "Basic app functionality",
@@ -51,7 +51,7 @@ export function BubblePage() {
     },
     {
       name: "Full Product",
-      price: "$2,999",
+      price: "$1,999",
       description: "Ideal for launching a complete product",
       features: [
         "Advanced features",
@@ -66,7 +66,7 @@ export function BubblePage() {
     },
     {
       name: "Enterprise App",
-      price: "$5,999",
+      price: "$4,999",
       description: "For complex business applications",
       features: [
         "Everything in Full Product",

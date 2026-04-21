@@ -44,7 +44,7 @@ export function ShopifyPage() {
   const pricing = [
     {
       name: "Starter Store",
-      price: "$99",
+      price: "$199",
       description: "Perfect for new businesses launching their first store",
       features: [
         "Up to 25 products",
@@ -72,7 +72,7 @@ export function ShopifyPage() {
     },
     {
       name: "Enterprise Store",
-      price: "$999",
+      price: "$599",
       description: "For established brands needing premium features",
       features: [
         "Everything in Professional",
